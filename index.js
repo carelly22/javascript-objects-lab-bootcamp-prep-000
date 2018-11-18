@@ -14,7 +14,7 @@ function destructivelyUpdateObjectWithKeyAndValue(recipes, key, value){
 
 //define a function which non-destructively deletes a key-value pair from the recipes object
 function updateObjectWithKeyAndValue(recipes, key){
-  let newRecipes = recipes;
+  const newRecipes = recipes;
   delete newRecipes[key];
   return newRecipes;
 };
