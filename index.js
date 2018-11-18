@@ -12,4 +12,9 @@ function destructivelyUpdateObjectWithKeyAndValue(recipes, key, value){
   return recipes;
 };
 
-//
+//define a function which non-destructively deletes a key-value pair from the recipes object
+function updateObjectWithKeyAndValue(recipes, key){
+  let newRecipes = recipes;
+  delete newRecipes[key];
+  return newRecipes;
+};
